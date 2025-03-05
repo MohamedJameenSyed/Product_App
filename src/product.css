@@ -1,0 +1,73 @@
+/* Add styles for responsive menu button */
+.navbar-toggler {
+    border: none;
+    background: transparent;
+}
+
+.navbar-collapse {
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 732px) {
+    .navbar-collapse {
+        display: none;
+    }
+    
+    .navbar-collapse.show {
+        display: block;
+    }
+}
+
+
+/* Product card styles */
+.product-container {
+    margin-bottom: 1rem;
+}
+
+.card {
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 732px) {
+    .product-container {
+        width: 100%;
+    }
+}
+
+
+/* Cart Modal Styles */
+.cart-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+}
+
+.cart-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    max-width: 90%;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+/* Ensure modal content adjusts on small screens */
+@media (max-width: 732px) {
+    .cart-content {
+        width: 100%;
+    }
+}
